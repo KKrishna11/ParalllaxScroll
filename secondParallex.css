@@ -1,0 +1,39 @@
+body{
+    margin: 0px;
+}
+
+.wrapper{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    perspective: 10px;
+}
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+    color: white;
+}
+.background{
+    transform: translateZ(-10px) scale(2);
+}
+.foreground{
+    transform: translateY(-5px) scale(1.5);
+}
+.background,.foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+section{
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: #333;
+    color: white;
+}
